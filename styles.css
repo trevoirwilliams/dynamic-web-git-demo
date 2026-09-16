@@ -400,6 +400,67 @@ img {
   font-weight: 600;
 }
 
+.adoption-layout,
+.step-grid,
+.pet-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.adoption-layout {
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+}
+
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.btn-secondary-dark {
+  background: transparent;
+  color: var(--navy);
+  border: 2px solid rgba(16, 42, 67, 0.2);
+}
+
+.adoption-card {
+  background: linear-gradient(180deg, #ffffff 0%, #edf9f4 100%);
+}
+
+.pet-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.pet-card {
+  background: var(--white);
+  border-radius: 22px;
+  box-shadow: 0 10px 24px var(--shadow);
+  padding: 1.5rem;
+}
+
+.pet-card h3 {
+  margin: 0.8rem 0 0.7rem;
+  font-size: 1.6rem;
+}
+
+.pet-card p,
+.pet-card li {
+  color: #49657d;
+}
+
+.pet-card ul {
+  padding-left: 1.2rem;
+  margin: 1rem 0 0;
+  display: grid;
+  gap: 0.4rem;
+}
+
+.step-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .site-footer {
   background: #0d1f2b;
   color: rgba(255, 255, 255, 0.8);
